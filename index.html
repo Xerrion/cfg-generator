@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="./css/materialize.min.css">
     <link rel="stylesheet" href="./css/main.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://unpkg.com/vue/dist/vue.js"></script>
 </head>
 <body>
 <div id="app" class="container">
@@ -62,9 +61,8 @@
             <input v-model="crosshairColorB" type="range" name="cl_crosshair_g" id="crosshairColorG" min="0" max="100"/>
         </p>
         <h6>Preview</h6>
-        <div v-bind:style="styleObject"></div>
+        {{ crosshairOutline }}
     </div>
-
 </div>
 <footer class="page-footer">
     <div class="container">
@@ -92,7 +90,6 @@
         </div>
     </div>
 </footer>
+<script src="./dist/build.js"></script>
 </body>
-<script src="./js/materialize.min.js"></script>
-<script src="./js/app.js"></script>
 </html>

@@ -1,6 +1,6 @@
 # Dedicated Server Settings Generator for Conan Exiles
 
-[![Travis CI](https://travis-ci.org/Xerrion/cfg-generator.svg?branch=dev)](https://travis-ci.org/Xerrion/cfg-generator)[![devDependency Status](https://david-dm.org/Xerrion/cfg-generator.svg)](https://david-dm.org/Dogfalo/materialize#info=devDependencies)
+[![Travis CI](https://travis-ci.org/Xerrion/cfg-generator.svg?branch=dev)](https://travis-ci.org/Xerrion/cfg-generator)[![devDependency Status](https://david-dm.org/Xerrion/cfg-generator.svg)](https://david-dm.org/Xerrion/cfg-generator#info=devDependencies)
 
 ### Current Version : v0.0.8
 

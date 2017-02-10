@@ -2,7 +2,7 @@
   "name": "conan-settings-generator",
   "description": "Dedicated Server Settings Generator for Conan Exiles",
   "author": "Lasse Nielsen <lassexl20@gmail.com>",
-  "private": true,
+  "private": false,
   "scripts": {
     "build": "cross-env NODE_ENV=production babel src/app.js -d dist | browserify -g envify dist/src/app.js | uglifyjs -c warnings=false -m > dist/build.js"
   },

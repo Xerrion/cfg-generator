@@ -1,7 +1,10 @@
-/*eslint-env node*/
+/* eslint-env node */
+/* eslint-env Vue */
+/* eslint-env jquery */
 
-const Vue = require('vue');
-const $ = require('jquery');
+import Vue from 'vue';
+import $ from 'jquery'
+import '../../src/materialize';
 
 new Vue({
     el: '#app',
@@ -15,14 +18,11 @@ new Vue({
         crosshairColorG: 250,
         crosshairColorB: 50,
         bg: 50,
-        styleObject: {
-            'background-color': 'rgb(' + this.crosshairColorR + '2,2)',
-            width: 250 + 'px',
-            height: 250 + 'px'
-        },
         crossHairDot: 0
     }
 });
+
+// jQuery Noobin
 $(document).ready(function () {
     $('#crosshairAlpha').tooltip({
         delay: 50,

@@ -4,7 +4,7 @@
   "author": "Lasse Nielsen <lassexl20@gmail.com>",
   "private": false,
   "scripts": {
-    "build": "mkdir -p dist/src && cross-env NODE_ENV=production babel src/app.js -d dist && browserify -g envify dist/src/app.js && uglifyjs -c warnings=false -m > dist/build.js"
+    "build": "cross-env NODE_ENV=production babel src/app.js -d dist && browserify -g envify dist/src/app.js | uglifyjs -c warnings=false -m -o dist/build.js"
   },
   "dependencies": {
     "materialize-css": "^0.98.0",
@@ -24,6 +24,7 @@
     "eslint-config-google": "^0.7.1",
     "eslint-config-vue": "^2.0.2",
     "eslint-plugin-vue": "^2.0.1",
+    "uglify-js": "^2.7.5",
     "uglifyjs": "^2.4.10",
     "vueify": "^9.4.0"
   },
